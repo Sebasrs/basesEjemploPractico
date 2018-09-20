@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ver Perros</title>
+</head>
+<body>
+	<h1>Todos los perros en la base de datos</h1>
+	<ul>
+	<% allDogs.forEach(function(dog){ %>
+		<li><strong>Nombre:</strong> <%= dog.name %> / <strong>Raza:</strong> <%= dog.breed %></li>
+	<% }); %>
+	</ul>
+	<a href="/">Back</a>
+</body>
+</html>
